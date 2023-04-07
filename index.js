@@ -55,10 +55,12 @@ app.get("/contact", (req, res) => {
     <body>
     <h1>my name is : ${req.query.Name}</h1>
     <h2>my email is : ${req.query.Mail}</h2>
-    <h3>my message is : ${req.query.message}</h3>
+    <h3>my age is : ${req.query.Age}</h3>
+    <h4>my message is : ${req.query.message}</h4>
         <form method="GET" action="/contact">
             <input type="text" name="Name" placeholder="type some text">
             <input type="email" name="Mail" placeholder="type some mail">
+            <input type="number" name="Age" placeholder="type your age">
             <textarea name="message" placeholder="type some text here"></textarea>
             <input type="submit" name="submit" >
 
